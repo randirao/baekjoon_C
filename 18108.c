@@ -2,6 +2,6 @@
 int main(){
     int y;
     scanf("%d",&y);
-    printf("%d",y+544);
+    printf("%d",y-543);
     return 0;
 }
