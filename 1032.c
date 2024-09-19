@@ -1,13 +1,16 @@
 #include<stdio.h>
 int main(){
     int n;
-    char c[50][50];
+    char rfile[50], file[50];
     scanf("%d", &n);
-    for(int i=0; i<n; i++){
-        scanf("%s", c[i]);
-        for(int j=0; j<sizeof(c[i]); j++){
-            if()
+    scanf("%s", rfile);
+    for(int i=0; i<n-1; i++){
+        scanf("%s", file);
+        for(int j=0; j<sizeof(rfile); j++){
+            if(rfile[j] == file[j]) continue;
+            else rfile[j] = '?';
         }
     }
+    printf("%s", rfile);
     return 0;
 }
